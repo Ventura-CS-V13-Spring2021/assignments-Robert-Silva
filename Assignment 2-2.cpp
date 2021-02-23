@@ -6,13 +6,13 @@ int main()
      cout << "Enter three integer values : " ;
      cin >> number1 >> number2 >> number3 ;
      
-     if (number1 == number2)
+     if (number1 != number2) 
+      cout<< "There are three duplicate numbers" << endl;
+    
+    else if(number1 != number3)
       cout<< "There are two duplicate numbers" << endl;
     
-    else if(number1 == number3)
-      cout<< "There are two duplicate numbers" << endl;
-    
-    else if(number2 == number3)
+    else if(number2 != number3)
       cout << "There are two duplicate numbers" << endl;
 
     else if((number1 == number2) && (number2 == number3))
